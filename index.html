@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SLIQ demo</title>
+	<link rel="stylesheet" type="text/css" href="sliq.css">
+</head>
+<body>
+	<h1>SLIQ Prototype</h1>
+	<form>
+		<input id="dataVal" type="text" value="100" placeholder="Enter Number">
+		<button id="update">Update</button>	
+	</form>
+
+	<div id="sliq"></div>
+
+	<script src="jquery.js"></script>
+	<script src="underscore.js"></script>
+	<script type="text/javascript" src="SLIQ.js"></script>
+	<script type="text/javascript">
+		$('#sliq').sliq();
+
+		$('form').submit(function(e){
+			e.preventDefault();
+
+			$('#sliq').sliq({
+				data: $('#dataVal').val() * 1
+			});
+		});
+	</script>
+</body>
+</html>

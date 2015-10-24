@@ -1,0 +1,90 @@
+body{
+	    margin: 50px 100px;
+	    font-family: helvetica, arial;
+}
+
+h1{
+	    color: #777;
+}
+
+form{
+	padding: 25px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    background: #eee;
+    width: 350px;
+}
+
+form input{
+	    height: 25px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 16px;
+    padding-top: 0;
+    text-align: center
+}
+
+form button{
+	    height: 27px;
+    background: #fff;
+    border: 1px solid #999;
+    width: 87px;
+    position: relative;
+    bottom: 1px;
+    cursor: pointer;
+}
+
+.sliq{
+	width: 400px;
+}
+
+.sliq .sliq-tabs{
+	clear: both;
+    overflow: hidden;
+    padding-left: 0;
+    margin: 0;
+    padding-top: 19px;
+}
+
+.sliq .sliq-tabs li{
+	list-style: none;
+    float: left;
+    text-align: center;
+    width: 20%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    line-height: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.sliq .sliq-tabs li.active{
+    border: 1px solid #555;
+    position: relative;
+    bottom: 14px;
+    line-height: 39px;
+    font-weight: bold;
+}
+
+.sliq .sliq-bar{
+height: 20px;
+    border: 1px solid #555;
+    position: relative;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-top: -14px;
+}
+
+.sliq .sliq-bar-progress{
+	top: 0;
+	left: 0;
+	position: absolute;
+	min-width: 35px;
+    height: 100%;
+    max-width: 100%;
+}
+
+.sliq .sliq-bar .sliq-bar-data{
+	float: right;
+	padding-right: 5px;
+}
